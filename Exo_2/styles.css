@@ -1,0 +1,102 @@
+/*
+Sans toucher au DOM de cet exercice :
+1- Les textes du formulaire sont en Helvetica, la largeur globale du formulaire est de 400px, il doit être centré dans la page et écarté du bord supérieur de la page de 100px.
+2- Des input avec une bordure noire continue de 1 pixel, des bords arrondis, une largeur fixée à 200px et faire en sorte que les champs soient espacés les uns des autres. Attention à ne pas commencer la frappe dans l'arrondi du champ.
+3- Des label de 100px de large à gauche des champs de saisie.
+4- Le bouton d'envoi doit avoir une couleur de fond modifiée, faire 400px de large et l'écriture doit être en gras au centre du bouton.
+5- L'input ayant le focus doit avoir un bord de 2px bleu.
+*/
+
+
+body {
+    margin-left: 80vh;
+    margin-top: 100px;
+  }
+  
+  form {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 400px;
+
+  
+    input {
+      border: 1px solid black;
+      border-radius: 10px;
+      width: 200px;
+      margin: 3px 0;
+      height: 25px;
+      &:focus {
+        border: 2px solid blue;
+      }
+    }
+  
+    label {
+      width: 100px;
+      display: inline-block;
+    }
+  
+    input[type="submit"] {
+      background-color: #9acd32;
+      width: 400px;
+      font-weight: bold;
+      height: 27px;
+    }
+  }
+  * {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+  }
+
+  body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  form {
+    width: 400px;
+    margin-top: 100px;
+  }
+
+  input {
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 200px;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+  }
+
+  label {
+    width: 100px; /* width: 101px */
+  }
+
+  input[type="submit"] {
+    width: 400px;
+    background-color: #9acd32;
+    font-weight: bold;
+  }
+
+  input:focus {
+    border: 2px solid blue;
+    outline: none;  /* à faire que sur chrome */
+  }
+
+/* body{
+    justify-content: center;
+    display: flex;
+    margin: 100px;
+}
+form{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 400px;
+}
+
+form input{
+    border: 1px solid red;
+    border-radius: 10px;
+    width: 200px;
+    margin: 10px;
+}
+
+form label{
+    font-size: 100px;
+} */

@@ -1,0 +1,34 @@
+/*
+Sans toucher au DOM de cet exercice :
+1- Mettre une bordure et une marge interne sur chaque case du tableau.
+2- Appliquer une couleur de fond aux lignes impaires du tableau.
+3- Mettre en gras le texte de la dernière ligne du tableau.
+*/
+
+
+table {
+    td {
+      border: 1px solid red;
+      padding: 10px;
+    }
+  
+    tr:nth-child(odd) {
+      background-color: lime;
+    }
+  
+    tr:last-of-type {
+      font-weight: bold;
+    }
+  }
+  
+/* table td {
+    border: 1px solid red;
+    padding: 10px;  
+}
+table tr:nth-child(2n+1) {
+    background-color: lime;
+    
+}
+table tr:last-of-type {
+font-weight: bold;
+} */
